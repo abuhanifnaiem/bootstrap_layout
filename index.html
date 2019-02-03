@@ -13,88 +13,272 @@
     <title>bootstrap 4</title>
   </head>
   <body>
-       <section class="header">
-         <div class="container-fluid">
-           <div class="row custom_bg">
+    <!--TYPOGRAPHY-->
+    <div class="container-fluid">
+      <h1 class="page-header">HELLO, WORLD! <small>secondary text</small></h1>
+      <p class="lead"> "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+      <p><mark class="bg"> Et harum quidem rerum facilis est et expedita distinctio.</mark> Nam libero tempore, <del class="bg">cum soluta nobis est eligendi optio cumque</del> nihil impedit quo minus id quod maxime placeat facere possimusomnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates ,<u class="bg"> omnis voluptas assumenda est. </u> repudiandae sint et molestiae non recusandae.</p>
+      
+      <hr>
 
-             <div class="col-md-2 col-sm-3 col-12">
-              <div class="bgc c_mb">1.1</div>
-            </div>
-             <div class="col-md-7 col-sm-6 col-7"> 
-              <div class="bgc c_mb">1.2</div>
-            </div>
-             <div class="col-md-3 col-sm-3 col-5">
-              <div class="bgc c_mb">1.3</div>
+      <!--ALIGNMENT & TRANSFORMATION-->
+      <h1>ALIGNMENT & TRANSFORMATIOIN</h1>
+
+      <P class="text-left bg_1">left aligned text.</P>
+      <P class="text-center bg_1">center aligned text.</P>
+      <P class="text-right bg_1">right aligned text.</P>
+      <P class="text-right bg_1"> justified text.</P>
+      <P class="text-justify bg_1" >no wrap text.</P>
+      <!--QUICK FLOATS-->
+      <div class="pull-right">div fioated to right</div>
+      <div class="pull-left">div fioated to left</div>
+
+      <!--CLER FLOAD-->
+      <div class="clearfix"></div>
+      <hr>
+
+      <!--BLOCKQUOTE-->
+      <blockquote class="blockquote">
+        <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores</p>
+        <footer>quote by <cite title="abu hanif">abu hanif</cite></footer>
+        </blockquote>
+
+        <hr>
+        <!--LISTS-->
+        <ul class="list-unstyled">
+          <li>time one</li>
+          <li>time two</li>
+          <li>time three</li>
+          <li>time four</li>
+        </ul>
+          <hr>
+        <ul class="list-inline">
+          <li>time one</li>
+          <li>time two</li>
+          <li>time three</li>
+          <li>time four</li>
+        </ul>
+        <hr>
+        <!--CODE-->
+       <code>&lt;h1&gt;heading text&lt;/h1&gt;</code>
+       <hr>
+       change disectory with<kbd>cd</kbd>
+       <hr>
+       to edit setting, press <kbd><kbd>ctrl</kbd>+<kbd>,</kbd></kbd>
+       <hr>
+
+       <!--CONTEXTUAL COLORS-->
+       <div>
+        <strong>
+       <p class="text-primary">HELLO WORLD</p>
+       <p class="text-success">HELLO WORLD</p>
+       <p class="text-info">HELLO WORLD</p>
+       <p class="text-warning">HELLO WORLD</p>
+       <p class="text-danger">HELLO WORLD</p>
+       <p class="text-muted">HELLO WORLD</p>
+     </strong>
+        </div>
+        <hr>
+        <!--CONTEXTUAL BACKGOUND COLORS-->
+         <div>
+        <strong>
+       <p class="bg-primary">HELLO WORLD</p>
+       <p class="bg-success">HELLO WORLD</p>
+       <p class="bg-info">HELLO WORLD</p>
+       <p class="bg-warning">HELLO WORLD</p>
+       <p class="bg-danger">HELLO WORLD</p>
+       <p class="bg-muted">HELLO WORLD</p>
+     </strong>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="container-fluid">
+        <!--BUTTONS-->
+        <button class="btn btn-defauld">button</button>
+        <a href="#" class="btn btn-default" role="link">link</a>
+        <input type="submit" class="btn btn-default" value="submit">
+
+        <!--CONTEXTUAL BUTTONS-->
+        <button class="btn btn-default">default</button>
+        <button class="btn btn-primary">primary</button>
+        <button class="btn btn-success">success</button>
+        <button class="btn btn-info">info</button>
+        <button class="btn btn-warning">warning</button>
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-link">link</button>
+        </div>
+        <hr>
+        <!--BUTTON SIZES-->
+        <button class="btn btn-default btn-lg">default</button>
+        <button class="btn btn-default ">default</button>
+        <button class="btn btn-default btn-sm">default</button>
+        <button class="btn btn-default btn-group-xs">default</button>
+        <hr>
+        <!--FORMS-->
+        <div class="container-fluid">
+          <form>
+           <div class="form-group">
+             <label>Name</label>
+             <input type="text" class="form-control" placeholder="add name">
+           </div>
+
+           <div class="form-group">
+             <label>Email</label>
+             <input type="Email" class="form-control" placeholder="add Email">
+           </div>
+
+           <div class="form-group">
+             <label>Massage</label>
+             <textarea type="Massage" class="form-control" placeholder="add Massage">
+             </textarea> 
+
+           </div>
+           <div class="form-group">
+            <label>Gender</label>
+           <select class="form-control">
+             <option value="male">male</option>
+             <option value="femae">female</option>
+             <option value="other">other</option>
+           </select>
+             
+           </div>
+            <br>
+           <div class="form-group">
+             <label>Upload file</label>
+             <input type="file" >
+             <p class="help-block">only and jpg allowed</p>
+           </div>
+
+           <div class="checkbox">
+            <label>
+              <input type="checkbox" > check me out
+            </label>
+          </div>
+            <button type="submit" class="btn btn-default">submit</button>
+
+             </form>
+           <hr>
+           <form class="form-inline">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" placeholder="email" >
             </div>
             
-           </div>
-         </div>
-       </section>
-
-      <section class="hero">
-        <div class="container-fluid">
-          <div class="row custom_bg">
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-8 col-sm-12">
-                   <div class="bgc c_mb ">2.1</div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                   <div class="bgc c_mb">2.2</div>
-                </div>
-              </div>
+            <div class="form-group">
+              <label>password</label>
+              <input type="password" class="form-control" placeholder="password" >
             </div>
-            <div class="col-md-3 d-md-block d-none">
-               <div class="bgc c_mb red">3</div>
+            
+           <div class="checkbox">
+            <label>
+              <input type="chackbox" name="">remember me
+            </label>
+            <button type="submit" class="btn btn-default">login</button>
+            </div>
+          </form>
+          </div>
+          
+          <hr>
+          <div class="container-fluid">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <tr>
+                <td>firstname</td>
+                <td>lastname</td>
+                <td>age</td>
+              </tr>
+              <tr>
+                <td class="danger">a</td>
+                <td>b</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>c</td>
+                <td>d</td>
+                <td>40</td>
+              </tr>
+              <tr class="success">
+                <td>e</td>
+                <td>f</td>
+                <td>30</td>
+              </tr>
+             <tr>
+               <td>g</td>
+               <td>h</td>
+               <td>20</td>
+             </tr>
+            </table>
+          </div>
+
+          <hr>
+            <!--LIST GROUP-->
+
+          <div class="container-fluid">
+            <ul class="list-group">
+              <li class="list-group-item">item one</li>
+              <li class="list-group-item">item tow</li>
+              <li class="list-group-item">item three</li>
+              <li class="list-group-item">item four</li>
+            </ul>
+              <hr>
+
+             <div class="list-group">
+           
+              <a href="#" class="list-group-item active">item one</a>
+              <a href="#" class="list-group-item">item tow</a>
+              <a href="#" class="list-group-item list-group-item-success">item three</a>
+              <a href="#" class="list-group-item">item four</a>
+            
+            </div>
+         
+          <hr>
+
+
+          <div class="container-fluid">
+            <div class="alert alert-success" role="alert">a success alert</div>
+            <div class="alert alert-info" role="alert">a info alert</div>
+            <div class="alert alert-warning" role="alert">a warning alert</div>
+            <div class="alert alert-danger" role="alert">a denger alert</div>
+            <div class="alert alert-warning alert-dismissable" role="alert">
+              <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>  you can close this alert
             </div>
           </div>
-        </div>
-        
-      </section>
+          <hr>
 
-      <section class="body">
-        <div class="container-fluid">
-          <div class="row custom_bg">
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-4 col-sm-9 col-12">
-                   <div class="bgc c_mb ">4.1</div>
-                </div>
-                <div class="col-sm-3 d-md-none d-sm-block col-12">
-                   <div class="bgc c_mb red ">3</div>
-                </div>
-                <div class="col-md-8 col-sm-12 col-12">
-                   <div class="bgc c_mb ">4.2</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 d-md-block d-none">
-             <div class="bgc c_mb">5</div>
+          <!--PROGRESS BARE-->
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-success pogress-bar-striped active" style="width: 50%;">
+              50%
             </div>
           </div>
-        </div>
-        
-      </section>
+          <hr>
+          <!--LABELS-->
 
-      <section class="five">
-        <div class="container-fluid">
-          <div class="row custom_bg  d-md-none d-sm-block d-none">
-            <div class="col-sm-12">
-               <div class="bgc c_mb">5</div>
-            </div>
-          </div>
-        </div>
-      </section>
+          <span class="label label-default">default</span>
+          <h1>hello <span class="label label-primary"> primary</span></h1>
+           <span class="label label-success">success</span>
+            <span class="label label-info">info</span>
+             <span class="label label-warning">warning</span>
+              <span class="label label-danger">danger</span>
+              <hr>
+              <!--BADGES-->
+              <a href="#">inbox <span class="badge">50</span></a>
+              <button class="btn btn-primary" type="button">
+                messages<span class="badge">10</span>
+              </button>
 
-      <section class="footer">
-        <div class="container-fluid">
-          <div class="row custom_bg">
-            <div class="col-md-12 col-sm-12">
-              <div class="bgc c_mb">6.1</div>
-            </div>
           </div>
-        </div>
-      </section>
+            <!--JUMBOTRON-->
+            <div class="jumbotron text-center">
+              <h1>welcome to my website</h1>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <a href="#" class="btn btn-primary">read more</a>
+            </div>
+
+          </div>
+      <div style="height: 400px;"></div>
     <!-- jQuery links -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

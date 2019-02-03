@@ -1,15 +1,7 @@
-.custom_bg{
-	background-color: #FFAEC9;
-	padding: 10px 0;
-	margin-bottom: 10px;
+.bg{
+	background-color:gold;
+
 }
-.bgc{
-	background-color:aqua;
-	min-height: 50px;
-}
-.c_mb{
-	margin-bottom: 10px;
-}
-.red{
-	background-color: red;
+.bg_1{
+	background-color: aqua;
 }
